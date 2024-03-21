@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<script src="jquary.js"></script>
+		<script src="/script.js"></script>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="background">
+			
+			<div class="container">
+				<div class="text">calculator</div>
+				<input class="menu" />
+				<div class="buttons">
+					<div class="row">
+						<div class="baton" style="flex-grow: 5">
+							<button class="calc" value="C" onclick="clearMenu()">C</button>
+						</div>
+						<div class="baton" style="flex-grow: 1">
+							<button class="calc" value="delete" onclick="deleteElement()">
+								delete
+							</button>
+						</div>
+						<div class="baton" style="flex-grow: 1">
+							<button class="calc" value="/" onclick="insertElement('/')">
+								/
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="baton">
+							<button class="calc" value="7" onclick="insertElement(7)">
+								7
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="8" onclick="insertElement(8)">
+								8
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="9" onclick="insertElement(9)">
+								9
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="*" onclick="insertElement('*')">
+								*
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="baton">
+							<button class="calc" value="4" onclick="insertElement(4)">
+								4
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="5" onclick="insertElement(5)">
+								5
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="6" onclick="insertElement(6)">
+								6
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="-" onclick="insertElement('-')">
+								-
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="baton">
+							<button class="calc" value="1" onclick="insertElement(1)">
+								1
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="2" onclick="insertElement(2)">
+								2
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="3" onclick="insertElement(3)">
+								3
+							</button>
+						</div>
+						<div class="baton">
+							<button class="calc" value="+" onclick="insertElement('+')">
+								+
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="baton" style="flex-grow: 1">
+							<button class="calc" value="0" onclick="insertElement(0)">
+								0
+							</button>
+						</div>
+						<div class="baton" style="flex-grow: 5">
+							<button class="calc" value="=" onclick="resultMath()">=</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
